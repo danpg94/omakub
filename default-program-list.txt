@@ -1,0 +1,86 @@
+# A simple list of apps that Omakub installs by default for reference. Optional apps are not included.
+
+app                             inst. type      script                                              source
+
+git                             apt             boot.sh
+gum                             .deb            install/terminal/required/app-gum.sh                https://github.com/charmbracelet/gum/releases/download/v${GUM_VERSION}/gum_${GUM_VERSION}_amd64.deb
+curl                            apt             install/terminal
+unzip                           apt             install/terminal
+btop                            apt             install/terminal/app-btop.sh
+fastfetch                       apt (ppa)       install/terminal/app-fastfetch.sh                   ppa:zhangsongcui3371/fastfetch
+github-cli                      apt (keyring)   install/terminal/app-github-cli.sh
+lazydocker                      tar.gz          install/terminal/app-lazydocker.sh                  https://github.com/jesseduffield/lazydocker/releases/latest/download/lazydocker_${LAZYDOCKER_VERSION}_Linux_x86_64.tar.gz
+lazygit                         tar.gz          install/terminal/app-lazygit.sh                     https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz
+nvim                            tar.gz          install/terminal/app-neovim.sh                      https://github.com/neovim/neovim/releases/download/stable/nvim-linux-x86_64.tar.gz
+luarocks                        apt             install/terminal/app-neovim.sh 
+tree-sitter-cli                 apt             install/terminal/app-neovim.sh 
+zellij                          tar.gz          install/terminal/app-zellij.sh                      https://github.com/zellij-org/zellij/releases/latest/download/zellij-x86_64-unknown-linux-musl.tar.gz
+fzf                             apt             install/terminal/apps-terminal.sh
+ripgrep                         apt             install/terminal/apps-terminal.sh
+bat                             apt             install/terminal/apps-terminal.sh
+eza                             apt             install/terminal/apps-terminal.sh
+zoxide                          apt             install/terminal/apps-terminal.sh
+plocate                         apt             install/terminal/apps-terminal.sh
+apache2-utils                   apt             install/terminal/apps-terminal.sh
+fd-find                         apt             install/terminal/apps-terminal.sh
+tldr                            apt             install/terminal/apps-terminal.sh
+docker                          apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg
+docker-ce                       apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg
+docker-ce-cli                   apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg 
+containerd.io                   apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg
+docker-buildx-plugin            apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg
+docker-compose-plugin           apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg
+docker-ce-rootless-extras       apt (keyring)   install/terminal/docker.sh                          https://download.docker.com/linux/ubuntu/gpg
+build-essential                 apt             install/terminal/libraries.sh
+pkg-config                      apt             install/terminal/libraries.sh
+autoconf                        apt             install/terminal/libraries.sh
+bison                           apt             install/terminal/libraries.sh
+clang                           apt             install/terminal/libraries.sh
+rustc                           apt             install/terminal/libraries.sh
+libssl-dev                      apt             install/terminal/libraries.sh
+libreadline-dev                 apt             install/terminal/libraries.sh
+zlib1g-dev                      apt             install/terminal/libraries.sh
+libyaml-dev                     apt             install/terminal/libraries.sh
+libreadline-dev                 apt             install/terminal/libraries.sh
+libncurses5-dev                 apt             install/terminal/libraries.sh
+libffi-dev                      apt             install/terminal/libraries.sh
+libgdbm-dev                     apt             install/terminal/libraries.sh
+libjemalloc2                    apt             install/terminal/libraries.sh
+libvips                         apt             install/terminal/libraries.sh
+imagemagick                     apt             install/terminal/libraries.sh
+libmagickwand-dev               apt             install/terminal/libraries.sh
+mupdf                           apt             install/terminal/libraries.sh
+mupdf-tools                     apt             install/terminal/libraries.sh
+gir1.2-gtop-2.0                 apt             install/terminal/libraries.sh
+gir1.2-clutter-1.0              apt             install/terminal/libraries.sh
+redis-tools                     apt             install/terminal/libraries.sh
+sqlite3                         apt             install/terminal/libraries.sh
+libsqlite3-0                    apt             install/terminal/libraries.sh
+libmysqlclient-dev              apt             install/terminal/libraries.sh
+libpq-dev                       apt             install/terminal/libraries.sh
+postgresql-client               apt             install/terminal/libraries.sh
+postgresql-client-common        apt             install/terminal/libraries.sh
+gpg                             apt             install/terminal/mise.sh
+wget                            apt             install/terminal/mise.sh
+mise                            apt (keyring)   install/terminal/mise.sh
+flatpak                         apt             install/desktop/a-flatpak.sh
+gnome-software-plugin-flatpak   apt             install/desktop/a-flatpak.sh
+alacritty                       apt             install/desktop/app-alacritty.sh
+google-chrome                   .deb            install/desktop/app-chrome.sh                       https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+flameshot                       apt             install/desktop/app-flameshot.sh
+gnome-sushi                     apt             install/desktop/app-gnome-sushi.sh
+gnome-tweak-tool                apt             install/desktop/app-gnome-tweak-tool.sh
+libreoffice                     apt             install/desktop/app-libreoffice.sh
+localsend                       .deb            install/desktop/app-localsend.sh                    https://github.com/localsend/localsend/releases/latest/download/LocalSend-${LOCALSEND_VERSION}-linux-x86-64.deb
+md.obsidian.Obsidian            flatpak         install/desktop/app-obsidian.sh
+pinta                           snap            install/desktop/app-pinta.sh
+signal-desktop                  apt (keyring)   install/desktop/app-signal.sh                       
+typora                          .deb            install/desktop/app-typora.sh                       https://downloads.typora.io/linux/typora_1.10.8_amd64.deb
+vlc                             apt             install/desktop/app-vlc.sh
+code                            apt (keyring)   install/desktop/app-vscode.sh
+wl-clipboard                    apt             install/desktop/app-wl-clipboard.sh
+xournalpp                       apt             install/desktop/app-xournalpp.sh
+python3-nautilus                apt             install/desktop/set-alacritty-default.sh
+gnome-shell-extension-manager   apt             install/desktop/set-gnome-extensions.sh
+pipx                            apt             install/desktop/set-gnome-extensions.sh
+ulauncher                       apt (keyring)   install/desktop/ulauncher.sh
