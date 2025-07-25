@@ -9,15 +9,17 @@ sudo cp -R nvim-linux-x86_64/share /usr/local/
 rm -rf nvim-linux-x86_64 nvim.tar.gz
 cd -
 
+# Note: Neovim is nice but currently not my main editor of choice. Disabling lazyvim for now ( Identified by double numeral comments).
+
 # Install luarocks and tree-sitter-cli to resolve lazyvim :checkhealth warnings
-sudo apt install -y luarocks tree-sitter-cli
+## sudo apt install -y luarocks tree-sitter-cli
 
 # Only attempt to set configuration if Neovim has never been run
 if [ ! -d "$HOME/.config/nvim" ]; then
   # Use LazyVim
-  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  ## git clone https://github.com/LazyVim/starter ~/.config/nvim
   # Remove the .git folder, so you can add it to your own repo later
-  rm -rf ~/.config/nvim/.git
+  ## rm -rf ~/.config/nvim/.git
 
   # Make everything match the terminal transparency
   mkdir -p ~/.config/nvim/plugin/after
