@@ -33,7 +33,7 @@ cd -
 
   # Turn off relative line numbers
   ## echo "vim.opt.relativenumber = false" >>~/.config/nvim/lua/config/options.lua
-fi
+## fi
 
 # Replace desktop launcher with one running inside Alacritty
 if [[ -d ~/.local/share/applications ]]; then
