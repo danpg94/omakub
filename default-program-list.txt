@@ -62,7 +62,7 @@ postgresql-client               apt             install/terminal/libraries.sh
 postgresql-client-common        apt             install/terminal/libraries.sh
 gpg                             apt             install/terminal/mise.sh
 wget                            apt             install/terminal/mise.sh
-mise                            apt (keyring)   install/terminal/mise.sh
+# mise                            apt (keyring)   install/terminal/mise.sh
 flatpak                         apt             install/desktop/a-flatpak.sh
 gnome-software-plugin-flatpak   apt             install/desktop/a-flatpak.sh
 alacritty                       apt             install/desktop/app-alacritty.sh
