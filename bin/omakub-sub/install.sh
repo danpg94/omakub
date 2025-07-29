@@ -17,6 +17,7 @@ CHOICES=(
   "Minecraft         Everyone's favorite blocky building game"
   "OBS Studio        Record screencasts with inputs from both display + webcam"
   "Ollama            Run LLMs, like Meta's Llama3, locally"
+  "Pinta             Free, open-source program for drawing and image editing"
   "Retroarch         Play retro games"
   "Spotify           Stream music from the world's most popular service"
   "Steam             Play games from Valve's store"
@@ -26,6 +27,7 @@ CHOICES=(
   "Zellijj           A terminal workspace with batteries included"
   "Zoom              Attend and host video chat meetings"
   "Web Apps          Install web apps with their own icon and shell"
+  "Xournalpp         Open-source and cross-platform note-taking software that is fast, flexible, and functional."
   "> All             Re-run any of the default installers"
   "<< Back           "
 )

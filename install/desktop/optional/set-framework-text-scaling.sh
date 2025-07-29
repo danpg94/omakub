@@ -7,4 +7,7 @@ if [ "$COMPUTER_MAKER" == "Framework" ] && [ "$SCREEN_RESOLUTION" == "2256x1504"
 	gsettings set org.gnome.desktop.interface text-scaling-factor 0.8
 	gsettings set org.gnome.desktop.interface cursor-size 16
 	sed -i "s/size = 9/size = 7/g" ~/.config/alacritty/alacritty.toml
+else
+	echo "You are currently not on a Framework device..."
+	sleep 3
 fi
