@@ -5,9 +5,9 @@ THEME=$(gum choose "${THEME_NAMES[@]}" "<< Back" --header "Choose your theme" --
 
 if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   cp $OMAKUB_PATH/themes/$THEME/alacritty.toml ~/.config/alacritty/theme.toml
-  cp $OMAKUB_PATH/themes/$THEME/zellij.kdl ~/.config/zellij/themes/$THEME.kdl
-  sed -i "s/theme \".*\"/theme \"$THEME\"/g" ~/.config/zellij/config.kdl
-  cp $OMAKUB_PATH/themes/$THEME/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
+  # cp $OMAKUB_PATH/themes/$THEME/zellij.kdl ~/.config/zellij/themes/$THEME.kdl
+  # sed -i "s/theme \".*\"/theme \"$THEME\"/g" ~/.config/zellij/config.kdl
+  # cp $OMAKUB_PATH/themes/$THEME/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 
   if [ -f "$OMAKUB_PATH/themes/$THEME/btop.theme" ]; then
     cp $OMAKUB_PATH/themes/$THEME/btop.theme ~/.config/btop/themes/$THEME.theme
