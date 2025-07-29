@@ -74,7 +74,7 @@ libreoffice                     apt             install/desktop/app-libreoffice.
 localsend                       .deb            install/desktop/app-localsend.sh                    https://github.com/localsend/localsend/releases/latest/download/LocalSend-${LOCALSEND_VERSION}-linux-x86-64.deb
 md.obsidian.Obsidian            flatpak         install/desktop/app-obsidian.sh
 pinta                           snap            install/desktop/app-pinta.sh
-signal-desktop                  apt (keyring)   install/desktop/app-signal.sh                       
+# signal-desktop                  apt (keyring)   install/desktop/app-signal.sh                       
 typora                          .deb            install/desktop/app-typora.sh                       https://downloads.typora.io/linux/typora_1.10.8_amd64.deb
 vlc                             apt             install/desktop/app-vlc.sh
 code                            apt (keyring)   install/desktop/app-vscode.sh
